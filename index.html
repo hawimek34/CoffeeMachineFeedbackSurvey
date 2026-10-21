@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Coffee Machine | Product Feedback Survey</title>
+
+  <meta name="description"
+        content="Share your coffee machine preferences and help improve future coffee products.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f3ee;
+      color: #30251f;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #fff;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+      color: #563a2c;
+    }
+
+    .nav-label {
+      color: #78695f;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 470px;
+      padding: 75px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(
+          rgba(42, 27, 20, 0.76),
+          rgba(42, 27, 20, 0.76)
+        ),
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      color: #e7c9ad;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: #f4eae2;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 28px;
+      background: #b77b50;
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .button:hover {
+      background: #965e38;
+      transform: translateY(-2px);
+    }
+
+    .section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 65px 24px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #493126;
+    }
+
+    .section-description {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 35px;
+      color: #76685f;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      padding: 28px 23px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(50, 35, 20, 0.05);
+    }
+
+    .card-icon {
+      font-size: 32px;
+      margin-bottom: 13px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #563a2c;
+    }
+
+    .card p {
+      color: #76685f;
+      font-size: 15px;
+    }
+
+    .survey-panel {
+      text-align: center;
+      background: #ede2d7;
+      border-radius: 16px;
+      padding: 45px 22px;
+    }
+
+    .survey-panel h2 {
+      font-size: 29px;
+      margin-bottom: 12px;
+      color: #493126;
+    }
+
+    .survey-panel p {
+      max-width: 600px;
+      margin: 0 auto 25px;
+      color: #6d5b4f;
+    }
+
+    .survey-panel .button {
+      background: #563a2c;
+    }
+
+    .survey-panel .button:hover {
+      background: #38251c;
+    }
+
+    .privacy {
+      font-size: 13px;
+      color: #76685f;
+      margin-top: 18px;
+    }
+
+    footer {
+      padding: 25px 20px;
+      text-align: center;
+      background: #30251f;
+      color: #e9ded5;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 430px;
+        padding: 55px 22px;
+      }
+
+      .navbar {
+        padding: 18px 20px;
+      }
+
+      .nav-label {
+        font-size: 12px;
+      }
+
+      .section {
+        padding: 45px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">☕ Coffee Insights</div>
+    <div class="nav-label">Product Research Survey</div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Your opinion matters</div>
+
+      <h1>What Makes the Perfect Coffee Machine?</h1>
+
+      <p>
+        From better coffee quality to easier cleaning, we want to
+        understand what matters most to coffee lovers. Share your
+        thoughts and help inspire better coffee experiences.
+      </p>
+
+      <a
+        class="button"
+        href="https://script.google.com/macros/s/AKfycbxoz2-o65DareEeQGxKMgMZgY4D6CfguzxRMPAN1jCbE8VVMKhQ9BnlXIuzxcst2IwV/exec"
+        target="_blank"
+        rel="noopener noreferrer">
+        Take the Survey →
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2 class="section-title">Help Us Understand Your Needs</h2>
+
+      <p class="section-description">
+        This survey explores the features, prices, and experiences
+        that influence people's coffee machine preferences.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">☕</div>
+          <h3>Your Preferences</h3>
+          <p>
+            Tell us which coffee machine types you prefer and what
+            budget feels right for you.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">⚙️</div>
+          <h3>Features That Matter</h3>
+          <p>
+            Share whether price, taste, speed, durability, or
+            easy cleaning matters most.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">💬</div>
+          <h3>Your Ideas</h3>
+          <p>
+            Explain what you would improve about your current coffee
+            machine or the ideal machine.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="survey-panel">
+        <h2>Ready to Share Your Feedback?</h2>
+
+        <p>
+          The survey takes approximately 2–3 minutes. Your responses
+          can help identify customer needs and opportunities for
+          better coffee machine designs.
+        </p>
+
+        <a
+          class="button"
+          href="https://script.google.com/macros/s/AKfycbxoz2-o65DareEeQGxKMgMZgY4D6CfguzxRMPAN1jCbE8VVMKhQ9BnlXIuzxcst2IwV/exec"
+          target="_blank"
+          rel="noopener noreferrer">
+          Start the Survey
+        </a>
+
+        <div class="privacy">
+          Participation is voluntary. Please do not include
+          identifying or sensitive personal information in your answers.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Coffee Insights · Coffee Machine Product Research</p>
+    <p>Thank you for helping us understand customer preferences.</p>
+  </footer>
+
+</body>
+</html>
